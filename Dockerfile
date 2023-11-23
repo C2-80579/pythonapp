@@ -1,4 +1,3 @@
-FROM python
-WORKDIR /src
-COPY helloworld.py .
-CMD python3 helloworld.py
+
+FROM httpd
+COPY index.html /usr/local/apache2/htdocs
